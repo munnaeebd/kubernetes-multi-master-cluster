@@ -66,4 +66,10 @@ kubeadm init --control-plane-endpoint 10.10.4.29:6443 --upload-certs --pod-netwo
 Ref: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/
 ```
 
+## Calico Installation:
+
+```
+kubectl create -f https://projectcalico.docs.tigera.io/manifests/tigera-operator.yaml
+kubectl create -f https://projectcalico.docs.tigera.io/manifests/custom-resources.yaml
+```
 
